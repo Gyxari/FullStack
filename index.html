@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sää Asema</title>
+</head>
+<body onload="init()">
+    <!-- header työnimestä -->
+    <div>
+        <header>Sääasema Aittorinne</header>
+    </div>
+
+    <!-- Tähän printataan tietokannan lataamis infot -->
+    <p id="info"></p>
+
+    <!-- rboxiin laatikko-css ja suurin diviin infot databasesta: suurin -->
+    <div  class="rbox">
+        <h2>Korkein lämpötila</h2>
+        <div id="suurin">
+        </div>
+    </div>
+
+    <!-- lboxiin laatikko-css ja pienin diviin infot databasesta: pienin -->
+    <div  class="lbox">
+        <h2>Matalin lämpötila</h2>
+        <div id="pienin">     
+        </div>
+    </div>
+    
+    <!-- tuloksetboksiin laatikko-css ja recentiin pusketaan lista kaikista
+    infoista databasessa. -->
+    <div class="tuloksetbox">
+        <h2>Kaikki tulokset</h2>
+        <ul id="recent"></ul>
+    </div>
+    
+    <!-- Kaksi charttia (tehty chart.js:llä), johon ylempään printataan kuviota lämpötiloista
+    kokoajalta ja alempaan uusimmat 20 lukemaa. -->
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+    <canvas id="myChart2" style="width:100%;max-width:700px"></canvas>
+
+    <!-- footer jossa tekijät. -->
+    <footer>FullStack harjoitustyö Ossi Koivisto & Jesse Kykyri</footer>
+    
+</body>
+<script src="code.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+</html> 
