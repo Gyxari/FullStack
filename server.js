@@ -8,7 +8,7 @@ app.use(cors())
 
 
 // määritetään yhteys
-const mongoDB = 'mongodb+srv://ossiekoivisto:Oggeogge1@saa-asema.qwbrqu6.mongodb.net/weather-station?retryWrites=true&w=majority'
+const mongoDB = 'mongodb+srv://******:********@saa-asema.*******.mongodb.net/weather-station?retryWrites=true&w=majority'
 
 // yhdistetään mongoon
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
